@@ -1,6 +1,6 @@
 # User Input
-genre = input("Genre (action/comedy/drama/sci-fi)? ").lower()
-time_available = int(input("Time (minutes)? "))
+genre = input("Select a movie genre (action/comedy/drama/sci-fi)? ").lower()
+time_available = int(input("How much time do you have (minutes)? "))
 
 # Rules and dataset
 if genre == "action" and time_available >= 120:
@@ -12,7 +12,7 @@ elif genre == "comedy" and time_available >= 120:
 elif genre == "comedy":
     movie = "Scary Movie"
 elif genre == "drama":
-    movie = "The Shawshank Redemption" if time_available >= 120 else "The Town"
+    movie = "The Shawshank Redemption" if time_available >= 140 else "The Town"
 elif genre == "sci-fi":
     movie = "Avatar" if time_available >= 120 else "Valerian and the City of a Thousand Planets"
 else:
